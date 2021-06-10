@@ -30,10 +30,6 @@ serve({
   },
   "/send": send,
   "/listen": listen,
-  "/:filename+": serveStatic("public", {
-    baseUrl: import.meta.url,
-    cache: false,
-  }),
 });
 
 function Main(props: { user: string }) {
